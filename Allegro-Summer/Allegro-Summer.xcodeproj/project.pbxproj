@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */; };
+		E2D6299D1EBD4E27009BBAA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6299C1EBD4E27009BBAA9 /* ViewController.swift */; };
+		E2D629A21EBD4E27009BBAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */; };
+		E2D629A51EBD4E27009BBAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */; };
+		E2D629B01EBD50C2009BBAA9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629AF1EBD50C2009BBAA9 /* Coordinator.swift */; };
+		E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */; };
+		E942D739368D8264CA38BF4B /* Pods_Allegro_Summer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1531959A2DA273D3E2B3A4FF /* Pods-Allegro-Summer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allegro_Summer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01746E05EEB30C16C91326F /* Pods-Allegro-Summer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.release.xcconfig"; sourceTree = "<group>"; };
+		E2D629971EBD4E27009BBAA9 /* Allegro-Summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allegro-Summer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2D6299C1EBD4E27009BBAA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2D629A41EBD4E27009BBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2D629A61EBD4E27009BBAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D629AF1EBD50C2009BBAA9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2D629941EBD4E27009BBAA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E942D739368D8264CA38BF4B /* Pods_Allegro_Summer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A36440CF5C8A65E5CB836A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1531959A2DA273D3E2B3A4FF /* Pods-Allegro-Summer.debug.xcconfig */,
+				E01746E05EEB30C16C91326F /* Pods-Allegro-Summer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2900F040B7B7A071048397D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2D6298E1EBD4E27009BBAA9 = {
+			isa = PBXGroup;
+			children = (
+				E2D629991EBD4E27009BBAA9 /* Allegro-Summer */,
+				E2D629981EBD4E27009BBAA9 /* Products */,
+				7A36440CF5C8A65E5CB836A6 /* Pods */,
+				D2900F040B7B7A071048397D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2D629981EBD4E27009BBAA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2D629971EBD4E27009BBAA9 /* Allegro-Summer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2D629991EBD4E27009BBAA9 /* Allegro-Summer */ = {
+			isa = PBXGroup;
+			children = (
+				E2D629AD1EBD4FAC009BBAA9 /* Coordinators */,
+				E2D629AC1EBD4F85009BBAA9 /* Locales */,
+				E2D629AE1EBD4FBA009BBAA9 /* ViewControllers */,
+				E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */,
+				E2D6299C1EBD4E27009BBAA9 /* ViewController.swift */,
+				E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */,
+				E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */,
+				E2D629A61EBD4E27009BBAA9 /* Info.plist */,
+			);
+			path = "Allegro-Summer";
+			sourceTree = "<group>";
+		};
+		E2D629AC1EBD4F85009BBAA9 /* Locales */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Locales;
+			sourceTree = "<group>";
+		};
+		E2D629AD1EBD4FAC009BBAA9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E2D629AF1EBD50C2009BBAA9 /* Coordinator.swift */,
+				E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E2D629AE1EBD4FBA009BBAA9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2D629961EBD4E27009BBAA9 /* Allegro-Summer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D629A91EBD4E27009BBAA9 /* Build configuration list for PBXNativeTarget "Allegro-Summer" */;
+			buildPhases = (
+				9AD95B487F7D930090BE6BC8 /* [CP] Check Pods Manifest.lock */,
+				E2D629931EBD4E27009BBAA9 /* Sources */,
+				E2D629941EBD4E27009BBAA9 /* Frameworks */,
+				E2D629951EBD4E27009BBAA9 /* Resources */,
+				6AE334AFD5670AAA800DA490 /* [CP] Embed Pods Frameworks */,
+				6F3669C5A6DFD2FA3EB78A1E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Allegro-Summer";
+			productName = "Allegro-Summer";
+			productReference = E2D629971EBD4E27009BBAA9 /* Allegro-Summer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2D6298F1EBD4E27009BBAA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Torianin;
+				TargetAttributes = {
+					E2D629961EBD4E27009BBAA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PS6RWDDX97;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E2D629921EBD4E27009BBAA9 /* Build configuration list for PBXProject "Allegro-Summer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2D6298E1EBD4E27009BBAA9;
+			productRefGroup = E2D629981EBD4E27009BBAA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2D629961EBD4E27009BBAA9 /* Allegro-Summer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2D629951EBD4E27009BBAA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D629A51EBD4E27009BBAA9 /* LaunchScreen.storyboard in Resources */,
+				E2D629A21EBD4E27009BBAA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AE334AFD5670AAA800DA490 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F3669C5A6DFD2FA3EB78A1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AD95B487F7D930090BE6BC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2D629931EBD4E27009BBAA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */,
+				E2D6299D1EBD4E27009BBAA9 /* ViewController.swift in Sources */,
+				E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */,
+				E2D629B01EBD50C2009BBAA9 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2D629A41EBD4E27009BBAA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2D629A71EBD4E27009BBAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2D629A81EBD4E27009BBAA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2D629AA1EBD4E27009BBAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1531959A2DA273D3E2B3A4FF /* Pods-Allegro-Summer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS6RWDDX97;
+				INFOPLIST_FILE = "Allegro-Summer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Torianin.Allegro-Summer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E2D629AB1EBD4E27009BBAA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E01746E05EEB30C16C91326F /* Pods-Allegro-Summer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS6RWDDX97;
+				INFOPLIST_FILE = "Allegro-Summer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Torianin.Allegro-Summer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2D629921EBD4E27009BBAA9 /* Build configuration list for PBXProject "Allegro-Summer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D629A71EBD4E27009BBAA9 /* Debug */,
+				E2D629A81EBD4E27009BBAA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D629A91EBD4E27009BBAA9 /* Build configuration list for PBXNativeTarget "Allegro-Summer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D629AA1EBD4E27009BBAA9 /* Debug */,
+				E2D629AB1EBD4E27009BBAA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2D6298F1EBD4E27009BBAA9 /* Project object */;
+}
