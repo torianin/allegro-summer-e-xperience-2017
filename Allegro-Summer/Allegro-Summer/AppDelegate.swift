@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        let menuTabBarController = MenuTabBarController()
+
+        window!.rootViewController = menuTabBarController
+        window!.makeKeyAndVisible()
+        
+        application.statusBarStyle = .lightContent
+
         return true
     }
 

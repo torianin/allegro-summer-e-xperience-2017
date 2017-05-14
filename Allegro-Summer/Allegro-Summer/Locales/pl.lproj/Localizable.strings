@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Allegro-Summer
+
+  Created by Robert Ignasiak on 07.05.2017.
+  Copyright © 2017 Torianin. All rights reserved.
+*/
+
+// App
+
+"app_version" = "Wersja 0.0.1";
+"app_name" = "Allegro Summer";
+
+// Menu
+
+"menu_title_home" = "Home";
+"menu_title_education" = "Doświadczenie";
+"menu_title_education" = "Wykrzatłcenie";
+"menu_title_contact" = "Kontakt";

@@ -2,7 +2,7 @@
 //  Coordinator.swift
 //  Allegro-Summer
 //
-//  Created by Robert Ignasiak on 06.05.2017.
+//  Created by Robert Ignasiak on 07.05.2017.
 //  Copyright © 2017 Torianin. All rights reserved.
 //
 

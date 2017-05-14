@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22268F31EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22268F21EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift */; };
+		E22269011EBFA275004D6535 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E22269031EBFA275004D6535 /* Localizable.strings */; };
+		E22BFEE21EC55AD1000639CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEE11EC55AD1000639CA /* HomeViewController.swift */; };
+		E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23610401EC5081900EF69C0 /* UIColor.swift */; };
+		E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */; };
+		E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */; };
+		E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */; };
+		E2A081311EBF905A00D8E37B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081301EBF905A00D8E37B /* Contact.swift */; };
+		E2A081341EBF911500D8E37B /* BaseUICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */; };
+		E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081351EBF935B00D8E37B /* MenuTabBarController.swift */; };
+		E2A0813A1EBF949700D8E37B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081391EBF949700D8E37B /* Coordinator.swift */; };
 		E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */; };
-		E2D6299D1EBD4E27009BBAA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6299C1EBD4E27009BBAA9 /* ViewController.swift */; };
 		E2D629A21EBD4E27009BBAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */; };
 		E2D629A51EBD4E27009BBAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */; };
-		E2D629B01EBD50C2009BBAA9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629AF1EBD50C2009BBAA9 /* Coordinator.swift */; };
 		E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */; };
 		E942D739368D8264CA38BF4B /* Pods_Allegro_Summer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */; };
 /* End PBXBuildFile section */
@@ -20,13 +29,25 @@
 		1531959A2DA273D3E2B3A4FF /* Pods-Allegro-Summer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.debug.xcconfig"; sourceTree = "<group>"; };
 		DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allegro_Summer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01746E05EEB30C16C91326F /* Pods-Allegro-Summer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.release.xcconfig"; sourceTree = "<group>"; };
+		E22268F21EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerWithTabBar.swift; sourceTree = "<group>"; };
+		E22268FF1EBFA268004D6535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E22269001EBFA26D004D6535 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E22269021EBFA275004D6535 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E22269041EBFA277004D6535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E22BFEE11EC55AD1000639CA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E23610401EC5081900EF69C0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCell.swift; path = Views/ContactCell.swift; sourceTree = "<group>"; };
+		E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactViewModel.swift; path = ViewModel/ContactViewModel.swift; sourceTree = "<group>"; };
+		E2A081301EBF905A00D8E37B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseUICollectionCell.swift; path = "Allegro-Summer/ViewControllers/BaseViews/BaseUICollectionCell.swift"; sourceTree = SOURCE_ROOT; };
+		E2A081351EBF935B00D8E37B /* MenuTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTabBarController.swift; path = "Allegro-Summer/ViewControllers/Menu/MenuTabBarController.swift"; sourceTree = SOURCE_ROOT; };
+		E2A081391EBF949700D8E37B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E2D629971EBD4E27009BBAA9 /* Allegro-Summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allegro-Summer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2D6299C1EBD4E27009BBAA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D629A41EBD4E27009BBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D629A61EBD4E27009BBAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D629AF1EBD50C2009BBAA9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +80,89 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E236103F1EC5080200EF69C0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E23610401EC5081900EF69C0 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E2A081201EBF8B8600D8E37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2A081301EBF905A00D8E37B /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2A081221EBF8C9600D8E37B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E2A081351EBF935B00D8E37B /* MenuTabBarController.swift */,
+			);
+			name = Menu;
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		E2A081231EBF8D2700D8E37B /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				E2A081291EBF8DBC00D8E37B /* Views */,
+				E2A081281EBF8DB100D8E37B /* ViewModel */,
+				E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		E2A081241EBF8D2700D8E37B /* Education */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Education;
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		E2A081251EBF8D2700D8E37B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E22BFEE11EC55AD1000639CA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2A081271EBF8D2700D8E37B /* Portfolio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		E2A081281EBF8DB100D8E37B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2A081291EBF8DBC00D8E37B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E2A081321EBF90E400D8E37B /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */,
+				E22268F21EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
 		E2D6298E1EBD4E27009BBAA9 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +184,12 @@
 		E2D629991EBD4E27009BBAA9 /* Allegro-Summer */ = {
 			isa = PBXGroup;
 			children = (
+				E236103F1EC5080200EF69C0 /* Extension */,
+				E2A081201EBF8B8600D8E37B /* Model */,
 				E2D629AD1EBD4FAC009BBAA9 /* Coordinators */,
 				E2D629AC1EBD4F85009BBAA9 /* Locales */,
 				E2D629AE1EBD4FBA009BBAA9 /* ViewControllers */,
 				E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */,
-				E2D6299C1EBD4E27009BBAA9 /* ViewController.swift */,
 				E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */,
 				E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */,
 				E2D629A61EBD4E27009BBAA9 /* Info.plist */,
@@ -95,6 +200,7 @@
 		E2D629AC1EBD4F85009BBAA9 /* Locales */ = {
 			isa = PBXGroup;
 			children = (
+				E22269031EBFA275004D6535 /* Localizable.strings */,
 			);
 			path = Locales;
 			sourceTree = "<group>";
@@ -102,8 +208,8 @@
 		E2D629AD1EBD4FAC009BBAA9 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				E2D629AF1EBD50C2009BBAA9 /* Coordinator.swift */,
 				E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */,
+				E2A081391EBF949700D8E37B /* Coordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -111,6 +217,12 @@
 		E2D629AE1EBD4FBA009BBAA9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2A081321EBF90E400D8E37B /* BaseViews */,
+				E2A081231EBF8D2700D8E37B /* Contact */,
+				E2A081241EBF8D2700D8E37B /* Education */,
+				E2A081251EBF8D2700D8E37B /* Home */,
+				E2A081271EBF8D2700D8E37B /* Portfolio */,
+				E2A081221EBF8C9600D8E37B /* Menu */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,8 +272,8 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = E2D6298E1EBD4E27009BBAA9;
 			productRefGroup = E2D629981EBD4E27009BBAA9 /* Products */;
@@ -179,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D629A51EBD4E27009BBAA9 /* LaunchScreen.storyboard in Resources */,
+				E22269011EBFA275004D6535 /* Localizable.strings in Resources */,
 				E2D629A21EBD4E27009BBAA9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,20 +351,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */,
+				E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */,
+				E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */,
+				E2A0813A1EBF949700D8E37B /* Coordinator.swift in Sources */,
 				E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */,
-				E2D6299D1EBD4E27009BBAA9 /* ViewController.swift in Sources */,
 				E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */,
-				E2D629B01EBD50C2009BBAA9 /* Coordinator.swift in Sources */,
+				E2A081311EBF905A00D8E37B /* Contact.swift in Sources */,
+				E2A081341EBF911500D8E37B /* BaseUICollectionCell.swift in Sources */,
+				E22268F31EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift in Sources */,
+				E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */,
+				E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */,
+				E22BFEE21EC55AD1000639CA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E22269031EBFA275004D6535 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22269021EBFA275004D6535 /* pl */,
+				E22269041EBFA277004D6535 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E2D629A41EBD4E27009BBAA9 /* Base */,
+				E22268FF1EBFA268004D6535 /* en */,
+				E22269001EBFA26D004D6535 /* pl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -263,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -312,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
