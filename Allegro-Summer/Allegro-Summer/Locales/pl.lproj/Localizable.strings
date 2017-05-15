@@ -17,3 +17,14 @@
 "menu_title_experience" = "Doświadczenie";
 "menu_title_education" = "Wykształcenie";
 "menu_title_contact" = "Kontakt";
+
+
+// Experience
+
+"work_experience_title" = "Work experience";
+
+// Home
+"welcome_text" = "Cześć!";
+"home_info_text" = "Nazywam się Robert, a to jest aplikacja przygotowana w ramach Programu Allegro Summer e-Xperience 2017.
+Parę słów o mnie: Pasjonat urządzeń mobilnych i nowoczesnych technologii. Entuzjasta języka Ruby i Swift. Uwielbia Yerba Mate. W wolnym czasie trenuje bieganie.
+W razie pytań zapraszam do kontaktu! 😊";

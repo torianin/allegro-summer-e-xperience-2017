@@ -63,7 +63,7 @@ class ContactViewController: UIViewController,  UICollectionViewDelegateFlowLayo
     }
     
     func setupNavigationBarTitle() {
-        title = NSLocalizedString("menu_title_contact", comment: "")
+        navigationController?.navigationBar.topItem?.title = NSLocalizedString("menu_title_contact", comment: "")
     }
     
     func contactSelected(contact: Contact) {

@@ -15,7 +15,7 @@ import RxCocoa
 class WorkExperienceViewController: UIViewController, UITableViewDelegate {
     var viewModel: WorkExperienceViewModel!
     let disposeBag = DisposeBag()
-        
+    
     let workExperienceTableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = UIColor.white
@@ -32,6 +32,14 @@ class WorkExperienceViewController: UIViewController, UITableViewDelegate {
     
     func setupWorkTableView() {
         workExperienceTableView.register(WorkExperienceCell.self, forCellReuseIdentifier: WorkExperienceCell.Identifier)
+        
+        workExperienceTableView.register(PortfolioHeaderCell.self, forCellReuseIdentifier: PortfolioHeaderCell.Identifier)
+        
+        let headerCell = workExperienceTableView.dequeueReusableCell(withIdentifier: PortfolioHeaderCell.Identifier) as! PortfolioHeaderCell
+        headerCell.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 80)
+        headerCell.headerText = NSLocalizedString("work_experience_title" , comment: "")
+        
+        workExperienceTableView.tableHeaderView = headerCell
         
         viewModel.workExperience.asObservable()
             .bindTo(workExperienceTableView.rx.items) { tableView, i, item in
@@ -55,8 +63,12 @@ class WorkExperienceViewController: UIViewController, UITableViewDelegate {
         setupConstraints()
     }
     
+    override func viewWillLayoutSubviews() {
+        setupConstraints()
+    }
+    
     func setupConstraints() {
-        workExperienceTableView.snp.makeConstraints { (make) -> Void in
+        workExperienceTableView.snp.remakeConstraints { (make) -> Void in
             make.width.equalTo(UIScreen.main.bounds.width)
             make.height.equalTo(800)
         }

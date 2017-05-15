@@ -36,4 +36,10 @@ extension UIColor {
             return UIColor.init(hex: "#be0004")
         }
     }
+    
+    open class var backgroundAppColor: UIColor {
+        get {
+            return UIColor.init(hex: "#c3bfd6")
+        }
+    }
 }

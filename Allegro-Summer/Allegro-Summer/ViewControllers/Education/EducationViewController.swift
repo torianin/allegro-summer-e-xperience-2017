@@ -89,7 +89,7 @@ class EducationViewController: UIViewController, UITableViewDelegate {
     }
     
     func setupNavigationBarTitle() {
-        title = NSLocalizedString("menu_title_education", comment: "")
+        navigationController?.navigationBar.topItem?.title = NSLocalizedString("menu_title_education", comment: "")
     }
 
     override func viewWillLayoutSubviews() {

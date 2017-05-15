@@ -22,17 +22,16 @@
 		E2A081311EBF905A00D8E37B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081301EBF905A00D8E37B /* Contact.swift */; };
 		E2A081341EBF911500D8E37B /* BaseUICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */; };
 		E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081351EBF935B00D8E37B /* MenuTabBarController.swift */; };
-		E2A0813A1EBF949700D8E37B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081391EBF949700D8E37B /* Coordinator.swift */; };
 		E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */; };
 		E2D629A21EBD4E27009BBAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */; };
 		E2D629A51EBD4E27009BBAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */; };
-		E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */; };
 		E2FE3B611EC938B400EC7A98 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */; };
 		E2FE3B631EC93EB500EC7A98 /* WorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */; };
 		E2FE3B661EC9401900EC7A98 /* WorkExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */; };
 		E2FE3B681EC9408500EC7A98 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */; };
 		E2FE3B6A1EC941FB00EC7A98 /* BaseUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B691EC941FB00EC7A98 /* BaseUITableViewCell.swift */; };
 		E2FE3B6D1EC9435100EC7A98 /* WorkExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B6C1EC9435100EC7A98 /* WorkExperienceViewModel.swift */; };
+		E2FE3B6F1EC956F800EC7A98 /* PortfolioHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B6E1EC956F800EC7A98 /* PortfolioHeaderCell.swift */; };
 		E942D739368D8264CA38BF4B /* Pods_Allegro_Summer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,19 +57,18 @@
 		E2A081301EBF905A00D8E37B /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseUICollectionCell.swift; path = "Allegro-Summer/ViewControllers/BaseViews/BaseUICollectionCell.swift"; sourceTree = SOURCE_ROOT; };
 		E2A081351EBF935B00D8E37B /* MenuTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTabBarController.swift; path = "Allegro-Summer/ViewControllers/Menu/MenuTabBarController.swift"; sourceTree = SOURCE_ROOT; };
-		E2A081391EBF949700D8E37B /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E2D629971EBD4E27009BBAA9 /* Allegro-Summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allegro-Summer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D629A41EBD4E27009BBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D629A61EBD4E27009BBAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceViewController.swift; path = Views/WorkExperienceViewController.swift; sourceTree = "<group>"; };
 		E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceCell.swift; path = Views/WorkExperienceCell.swift; sourceTree = "<group>"; };
 		E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
 		E2FE3B691EC941FB00EC7A98 /* BaseUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITableViewCell.swift; sourceTree = "<group>"; };
 		E2FE3B6C1EC9435100EC7A98 /* WorkExperienceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceViewModel.swift; path = ViewModel/WorkExperienceViewModel.swift; sourceTree = "<group>"; };
+		E2FE3B6E1EC956F800EC7A98 /* PortfolioHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PortfolioHeaderCell.swift; path = Views/PortfolioHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +232,6 @@
 			children = (
 				E236103F1EC5080200EF69C0 /* Extension */,
 				E2A081201EBF8B8600D8E37B /* Model */,
-				E2D629AD1EBD4FAC009BBAA9 /* Coordinators */,
 				E2D629AC1EBD4F85009BBAA9 /* Locales */,
 				E2D629AE1EBD4FBA009BBAA9 /* ViewControllers */,
 				E2D6299A1EBD4E27009BBAA9 /* AppDelegate.swift */,
@@ -251,15 +248,6 @@
 				E22269031EBFA275004D6535 /* Localizable.strings */,
 			);
 			path = Locales;
-			sourceTree = "<group>";
-		};
-		E2D629AD1EBD4FAC009BBAA9 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */,
-				E2A081391EBF949700D8E37B /* Coordinator.swift */,
-			);
-			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		E2D629AE1EBD4FBA009BBAA9 /* ViewControllers */ = {
@@ -280,6 +268,7 @@
 			children = (
 				E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */,
 				E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */,
+				E2FE3B6E1EC956F800EC7A98 /* PortfolioHeaderCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -419,13 +408,12 @@
 				E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */,
 				E2FE3B611EC938B400EC7A98 /* PortfolioViewController.swift in Sources */,
 				E2FE3B6D1EC9435100EC7A98 /* WorkExperienceViewModel.swift in Sources */,
+				E2FE3B6F1EC956F800EC7A98 /* PortfolioHeaderCell.swift in Sources */,
 				E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */,
 				E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */,
 				E22BFEEB1EC570FA000639CA /* EducationCell.swift in Sources */,
 				E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */,
 				E2FE3B6A1EC941FB00EC7A98 /* BaseUITableViewCell.swift in Sources */,
-				E2A0813A1EBF949700D8E37B /* Coordinator.swift in Sources */,
-				E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */,
 				E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */,
 				E27BCAAB1EC914990091DC07 /* Language.swift in Sources */,
 				E2A081311EBF905A00D8E37B /* Contact.swift in Sources */,

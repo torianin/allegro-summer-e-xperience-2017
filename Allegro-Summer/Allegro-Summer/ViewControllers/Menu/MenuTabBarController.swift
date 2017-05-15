@@ -16,9 +16,7 @@ class MenuTabBarController: UITabBarController {
     }
     
     func setupTabBar() {
-        let homeViewNavigationController = BaseNavigationController()
         let homeViewController = HomeViewController()
-        homeViewNavigationController.viewControllers = [homeViewController]
         
         let portfolioViewNavigationController = BaseNavigationController()
         let portfolioViewController = PortfolioViewController()
@@ -34,9 +32,7 @@ class MenuTabBarController: UITabBarController {
         let educationViewController = EducationViewController(viewModel: educationViewModel)
         educationNavigationController.viewControllers = [educationViewController]
         
-
-        
-        let controllers = [homeViewNavigationController,
+        let controllers = [homeViewController,
                            portfolioViewNavigationController,
                            educationNavigationController,
                            contactNavigationController]
@@ -52,7 +48,7 @@ class MenuTabBarController: UITabBarController {
         portfolioViewController.tabBarItem = UITabBarItem(
             title: NSLocalizedString("menu_title_experience", comment: ""),
             image: #imageLiteral(resourceName: "ic_apps_36pt"),
-            tag: 0
+            tag: 1
         )
         
         educationNavigationController.tabBarItem = UITabBarItem(

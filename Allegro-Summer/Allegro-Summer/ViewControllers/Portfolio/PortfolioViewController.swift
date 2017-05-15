@@ -33,13 +33,14 @@ class PortfolioViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         setupNavigationBarTitle()
         setupStackView()
         setupConstraints()
     }
     
     func setupNavigationBarTitle() {
-        title = NSLocalizedString("menu_title_experience", comment: "")
+        navigationController?.navigationBar.topItem?.title = NSLocalizedString("menu_title_experience", comment: "")
     }
     
     func setupStackView() {
@@ -53,13 +54,17 @@ class PortfolioViewController: UIViewController {
         self.view.layoutIfNeeded()
     }
     
+    override func viewWillLayoutSubviews() {
+        setupConstraints()
+    }
+    
     func setupConstraints() {
         
-        scrollView.snp.makeConstraints { (make) -> Void in
+        scrollView.snp.remakeConstraints { (make) -> Void in
             make.edges.equalToSuperview()
         }
         
-        stackView.snp.makeConstraints{ (make) -> Void in
+        stackView.snp.remakeConstraints{ (make) -> Void in
             make.edges.equalToSuperview()
             make.width.equalTo(UIScreen.main.bounds.width)
             make.height.equalTo(UIScreen.main.bounds.height)
