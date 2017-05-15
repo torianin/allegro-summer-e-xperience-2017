@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E22268F31EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22268F21EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift */; };
+		E22268F31EBF9D56004D6535 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22268F21EBF9D56004D6535 /* BaseNavigationController.swift */; };
 		E22269011EBFA275004D6535 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E22269031EBFA275004D6535 /* Localizable.strings */; };
 		E22BFEE21EC55AD1000639CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEE11EC55AD1000639CA /* HomeViewController.swift */; };
+		E22BFEE41EC56FAE000639CA /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEE31EC56FAE000639CA /* EducationViewController.swift */; };
+		E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEE61EC5702E000639CA /* EducationViewModel.swift */; };
+		E22BFEEB1EC570FA000639CA /* EducationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEEA1EC570FA000639CA /* EducationCell.swift */; };
 		E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23610401EC5081900EF69C0 /* UIColor.swift */; };
+		E27BCAA91EC903ED0091DC07 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAA81EC903ED0091DC07 /* University.swift */; };
+		E27BCAAB1EC914990091DC07 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAAA1EC914990091DC07 /* Language.swift */; };
 		E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */; };
 		E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */; };
 		E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */; };
@@ -29,13 +34,18 @@
 		1531959A2DA273D3E2B3A4FF /* Pods-Allegro-Summer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.debug.xcconfig"; sourceTree = "<group>"; };
 		DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allegro_Summer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01746E05EEB30C16C91326F /* Pods-Allegro-Summer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.release.xcconfig"; sourceTree = "<group>"; };
-		E22268F21EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerWithTabBar.swift; sourceTree = "<group>"; };
+		E22268F21EBF9D56004D6535 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		E22268FF1EBFA268004D6535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E22269001EBFA26D004D6535 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E22269021EBFA275004D6535 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E22269041EBFA277004D6535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E22BFEE11EC55AD1000639CA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E22BFEE31EC56FAE000639CA /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationViewController.swift; path = "Allegro-Summer/ViewControllers/Education/EducationViewController.swift"; sourceTree = SOURCE_ROOT; };
+		E22BFEE61EC5702E000639CA /* EducationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationViewModel.swift; path = "Allegro-Summer/ViewControllers/Education/ViewModel/EducationViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		E22BFEEA1EC570FA000639CA /* EducationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationCell.swift; path = "Allegro-Summer/ViewControllers/Education/View/EducationCell.swift"; sourceTree = SOURCE_ROOT; };
 		E23610401EC5081900EF69C0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E27BCAA81EC903ED0091DC07 /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		E27BCAAA1EC914990091DC07 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCell.swift; path = Views/ContactCell.swift; sourceTree = "<group>"; };
 		E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactViewModel.swift; path = ViewModel/ContactViewModel.swift; sourceTree = "<group>"; };
@@ -80,6 +90,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E22BFEE51EC57010000639CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E22BFEE61EC5702E000639CA /* EducationViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E22BFEE91EC570D4000639CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E22BFEEA1EC570FA000639CA /* EducationCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E236103F1EC5080200EF69C0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				E2A081301EBF905A00D8E37B /* Contact.swift */,
+				E27BCAA81EC903ED0091DC07 /* University.swift */,
+				E27BCAAA1EC914990091DC07 /* Language.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +146,9 @@
 		E2A081241EBF8D2700D8E37B /* Education */ = {
 			isa = PBXGroup;
 			children = (
+				E22BFEE91EC570D4000639CA /* View */,
+				E22BFEE51EC57010000639CA /* ViewModel */,
+				E22BFEE31EC56FAE000639CA /* EducationViewController.swift */,
 			);
 			name = Education;
 			path = Experience;
@@ -158,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */,
-				E22268F21EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift */,
+				E22268F21EBF9D56004D6535 /* BaseNavigationController.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -352,15 +383,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */,
+				E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */,
 				E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */,
+				E22BFEEB1EC570FA000639CA /* EducationCell.swift in Sources */,
 				E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */,
 				E2A0813A1EBF949700D8E37B /* Coordinator.swift in Sources */,
 				E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */,
 				E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */,
+				E27BCAAB1EC914990091DC07 /* Language.swift in Sources */,
 				E2A081311EBF905A00D8E37B /* Contact.swift in Sources */,
 				E2A081341EBF911500D8E37B /* BaseUICollectionCell.swift in Sources */,
-				E22268F31EBF9D56004D6535 /* BaseViewControllerWithTabBar.swift in Sources */,
+				E22BFEE41EC56FAE000639CA /* EducationViewController.swift in Sources */,
+				E22268F31EBF9D56004D6535 /* BaseNavigationController.swift in Sources */,
 				E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */,
+				E27BCAA91EC903ED0091DC07 /* University.swift in Sources */,
 				E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */,
 				E22BFEE21EC55AD1000639CA /* HomeViewController.swift in Sources */,
 			);

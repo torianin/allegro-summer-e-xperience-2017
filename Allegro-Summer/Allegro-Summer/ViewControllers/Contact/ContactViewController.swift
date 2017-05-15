@@ -98,15 +98,13 @@ class ContactViewController: UIViewController,  UICollectionViewDelegateFlowLayo
         view.addSubview(collectionView)
     }
     
-    override func viewWillLayoutSubviews() {
-        collectionView.snp.updateConstraints { (make) -> Void in
-            make.edges.equalToSuperview()
-        }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        collectionView.collectionViewLayout.invalidateLayout()
     }
-    
+
     func setupConstraints() {
         collectionView.snp.makeConstraints { (make) -> Void in
-            make.edges.equalToSuperview()
+            make.left.top.right.bottom.equalToSuperview()
         }
     }
     

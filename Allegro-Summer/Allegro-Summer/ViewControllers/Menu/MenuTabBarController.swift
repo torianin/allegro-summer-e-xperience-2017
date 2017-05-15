@@ -21,11 +21,17 @@ class MenuTabBarController: UITabBarController {
         let contactViewController = ContactViewController(viewModel: contactViewModel)
         contactNavigationController.viewControllers = [contactViewController]
         
+        let educationNavigationController = BaseNavigationController()
+        let educationViewModel = EducationViewModel()
+        let educationViewController = EducationViewController(viewModel: educationViewModel)
+        educationNavigationController.viewControllers = [educationViewController]
+        
         let homeViewNavigationController = BaseNavigationController()
         let homeViewController = HomeViewController()
         homeViewNavigationController.viewControllers = [homeViewController]
         
         let controllers = [homeViewNavigationController,
+                           educationNavigationController,
                            contactNavigationController]
         
         self.viewControllers = controllers
@@ -36,10 +42,16 @@ class MenuTabBarController: UITabBarController {
             tag: 0
         )
         
+        educationNavigationController.tabBarItem = UITabBarItem(
+            title: NSLocalizedString("menu_title_education", comment: ""),
+            image: #imageLiteral(resourceName: "ic_school_36pt"),
+            tag: 1
+        )
+        
         contactViewController.tabBarItem = UITabBarItem(
             title: NSLocalizedString("menu_title_contact", comment: ""),
             image: #imageLiteral(resourceName: "ic_mail_36pt"),
-            tag: 1
+            tag: 2
         )
         
         tabBar.tintColor = UIColor.appColor
