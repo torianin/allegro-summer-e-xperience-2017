@@ -11,7 +11,7 @@ import UIKit
 import SnapKit
 import RxSwift
 
-class EducationCell: UITableViewCell {
+class EducationCell: BaseUITableViewCell {
     static let Identifier = "EducationCell"
     
     var university: University? {
@@ -72,15 +72,9 @@ class EducationCell: UITableViewCell {
         label.textColor = UIColor.appColor
         return label
     }()
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        setupViews()
-    }
 
-    func setupViews() {
-        self.selectionStyle = .none
+    override func setupViews() {
+        super.setupViews()
         
         self.addSubview(logoImageView)
         self.addSubview(nameLabel)
@@ -108,10 +102,5 @@ class EducationCell: UITableViewCell {
             make.right.equalTo(self)
         }
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 
 }

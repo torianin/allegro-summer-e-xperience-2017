@@ -27,6 +27,12 @@
 		E2D629A21EBD4E27009BBAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */; };
 		E2D629A51EBD4E27009BBAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D629A31EBD4E27009BBAA9 /* LaunchScreen.storyboard */; };
 		E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */; };
+		E2FE3B611EC938B400EC7A98 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */; };
+		E2FE3B631EC93EB500EC7A98 /* WorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */; };
+		E2FE3B661EC9401900EC7A98 /* WorkExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */; };
+		E2FE3B681EC9408500EC7A98 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */; };
+		E2FE3B6A1EC941FB00EC7A98 /* BaseUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B691EC941FB00EC7A98 /* BaseUITableViewCell.swift */; };
+		E2FE3B6D1EC9435100EC7A98 /* WorkExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B6C1EC9435100EC7A98 /* WorkExperienceViewModel.swift */; };
 		E942D739368D8264CA38BF4B /* Pods_Allegro_Summer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +65,12 @@
 		E2D629A41EBD4E27009BBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D629A61EBD4E27009BBAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2D629B11EBD50DF009BBAA9 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceViewController.swift; path = Views/WorkExperienceViewController.swift; sourceTree = "<group>"; };
+		E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceCell.swift; path = Views/WorkExperienceCell.swift; sourceTree = "<group>"; };
+		E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
+		E2FE3B691EC941FB00EC7A98 /* BaseUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUITableViewCell.swift; sourceTree = "<group>"; };
+		E2FE3B6C1EC9435100EC7A98 /* WorkExperienceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceViewModel.swift; path = ViewModel/WorkExperienceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +132,7 @@
 				E2A081301EBF905A00D8E37B /* Contact.swift */,
 				E27BCAA81EC903ED0091DC07 /* University.swift */,
 				E27BCAAA1EC914990091DC07 /* Language.swift */,
+				E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +178,9 @@
 		E2A081271EBF8D2700D8E37B /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				E2FE3B6B1EC9433900EC7A98 /* ViewModel */,
+				E2FE3B641EC93EBD00EC7A98 /* Views */,
+				E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -190,6 +206,7 @@
 			children = (
 				E2A081331EBF911500D8E37B /* BaseUICollectionCell.swift */,
 				E22268F21EBF9D56004D6535 /* BaseNavigationController.swift */,
+				E2FE3B691EC941FB00EC7A98 /* BaseUITableViewCell.swift */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -256,6 +273,23 @@
 				E2A081221EBF8C9600D8E37B /* Menu */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E2FE3B641EC93EBD00EC7A98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */,
+				E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E2FE3B6B1EC9433900EC7A98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE3B6C1EC9435100EC7A98 /* WorkExperienceViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,10 +417,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */,
+				E2FE3B611EC938B400EC7A98 /* PortfolioViewController.swift in Sources */,
+				E2FE3B6D1EC9435100EC7A98 /* WorkExperienceViewModel.swift in Sources */,
 				E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */,
 				E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */,
 				E22BFEEB1EC570FA000639CA /* EducationCell.swift in Sources */,
 				E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */,
+				E2FE3B6A1EC941FB00EC7A98 /* BaseUITableViewCell.swift in Sources */,
 				E2A0813A1EBF949700D8E37B /* Coordinator.swift in Sources */,
 				E2D629B21EBD50DF009BBAA9 /* AppCoordinator.swift in Sources */,
 				E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */,
@@ -394,10 +431,13 @@
 				E2A081311EBF905A00D8E37B /* Contact.swift in Sources */,
 				E2A081341EBF911500D8E37B /* BaseUICollectionCell.swift in Sources */,
 				E22BFEE41EC56FAE000639CA /* EducationViewController.swift in Sources */,
+				E2FE3B681EC9408500EC7A98 /* WorkExperience.swift in Sources */,
 				E22268F31EBF9D56004D6535 /* BaseNavigationController.swift in Sources */,
+				E2FE3B631EC93EB500EC7A98 /* WorkExperienceViewController.swift in Sources */,
 				E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */,
 				E27BCAA91EC903ED0091DC07 /* University.swift in Sources */,
 				E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */,
+				E2FE3B661EC9401900EC7A98 /* WorkExperienceCell.swift in Sources */,
 				E22BFEE21EC55AD1000639CA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

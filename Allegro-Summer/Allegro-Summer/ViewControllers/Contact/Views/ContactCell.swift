@@ -63,6 +63,7 @@ class ContactCell: BaseUICollectionCell {
     
     override func setupViews() {
         super.setupViews()
+        
         addSubview(valueLabel)
         addSubview(contactDescriptionLabel)
         addSubview(imageView)

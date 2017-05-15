@@ -16,6 +16,14 @@ class MenuTabBarController: UITabBarController {
     }
     
     func setupTabBar() {
+        let homeViewNavigationController = BaseNavigationController()
+        let homeViewController = HomeViewController()
+        homeViewNavigationController.viewControllers = [homeViewController]
+        
+        let portfolioViewNavigationController = BaseNavigationController()
+        let portfolioViewController = PortfolioViewController()
+        portfolioViewNavigationController.viewControllers = [portfolioViewController]
+        
         let contactNavigationController = BaseNavigationController()
         let contactViewModel = ContactViewModel()
         let contactViewController = ContactViewController(viewModel: contactViewModel)
@@ -26,11 +34,10 @@ class MenuTabBarController: UITabBarController {
         let educationViewController = EducationViewController(viewModel: educationViewModel)
         educationNavigationController.viewControllers = [educationViewController]
         
-        let homeViewNavigationController = BaseNavigationController()
-        let homeViewController = HomeViewController()
-        homeViewNavigationController.viewControllers = [homeViewController]
+
         
         let controllers = [homeViewNavigationController,
+                           portfolioViewNavigationController,
                            educationNavigationController,
                            contactNavigationController]
         
@@ -42,16 +49,22 @@ class MenuTabBarController: UITabBarController {
             tag: 0
         )
         
+        portfolioViewController.tabBarItem = UITabBarItem(
+            title: NSLocalizedString("menu_title_experience", comment: ""),
+            image: #imageLiteral(resourceName: "ic_apps_36pt"),
+            tag: 0
+        )
+        
         educationNavigationController.tabBarItem = UITabBarItem(
             title: NSLocalizedString("menu_title_education", comment: ""),
             image: #imageLiteral(resourceName: "ic_school_36pt"),
-            tag: 1
+            tag: 2
         )
         
         contactViewController.tabBarItem = UITabBarItem(
             title: NSLocalizedString("menu_title_contact", comment: ""),
             image: #imageLiteral(resourceName: "ic_mail_36pt"),
-            tag: 2
+            tag: 3
         )
         
         tabBar.tintColor = UIColor.appColor
