@@ -70,24 +70,50 @@ class HomeViewController: UIViewController {
         backgroundImageView.frame = view.frame
         view.addSubview(backgroundImageView)
     }
+    
+    override func viewWillLayoutSubviews() {
+        setupConstraints()
+    }
 
     func setupConstraints() {
-        helloTextLabel.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(view).offset(50)
-            make.left.equalTo(view).offset(30)
-        }
-        
-        infoTextLabel.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(view).offset(30)
-            make.top.equalTo(helloTextLabel.snp.bottom).offset(30)
-            make.width.equalTo(view).offset(-60)
-        }
-        
-        myPhotoImageView.snp.makeConstraints { (make) -> Void in
-            make.left.right.equalTo(view)
-            make.bottom.equalTo(bottomLayoutGuide.snp.top)
-            make.width.equalTo(view)
-            make.height.equalTo(myPhotoImageView.snp.width).multipliedBy( 1303.0 / 1833.0)
+        if UIApplication.shared.statusBarOrientation.isLandscape {
+            helloTextLabel.snp.remakeConstraints { (make) -> Void in
+                make.top.equalTo(view).offset(10)
+                make.left.equalTo(view).offset(30)
+                make.width.equalTo(view).dividedBy(2)
+            }
+            
+            infoTextLabel.snp.remakeConstraints { (make) -> Void in
+                make.left.equalTo(view).offset(30)
+                make.top.equalTo(helloTextLabel.snp.bottom).offset(10)
+                make.width.equalTo(view).dividedBy(2)
+            }
+            
+            myPhotoImageView.snp.remakeConstraints { (make) -> Void in
+                make.left.equalTo(infoTextLabel.snp.right)
+                make.right.equalTo(view)
+                make.bottom.equalTo(bottomLayoutGuide.snp.top)
+                make.width.equalTo(view).dividedBy(2)
+                make.height.equalTo(myPhotoImageView.snp.width).multipliedBy( 1303.0 / 1833.0)
+            }
+        } else {
+            helloTextLabel.snp.remakeConstraints { (make) -> Void in
+                make.top.equalTo(view).offset(50)
+                make.left.equalTo(view).offset(30)
+            }
+            
+            infoTextLabel.snp.remakeConstraints { (make) -> Void in
+                make.left.equalTo(view).offset(30)
+                make.top.equalTo(helloTextLabel.snp.bottom).offset(30)
+                make.width.equalTo(view).offset(-60)
+            }
+            
+            myPhotoImageView.snp.remakeConstraints { (make) -> Void in
+                make.left.right.equalTo(view)
+                make.bottom.equalTo(bottomLayoutGuide.snp.top)
+                make.width.equalTo(view)
+                make.height.equalTo(myPhotoImageView.snp.width).multipliedBy( 1303.0 / 1833.0)
+            }
         }
     }
 }

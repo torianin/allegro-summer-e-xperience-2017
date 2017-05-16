@@ -15,8 +15,9 @@ class PortfolioViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.alignment = .center
-        stackView.distribution = .fillEqually
-        stackView.spacing = 2
+        stackView.spacing = 10
+        stackView.distribution = .equalSpacing
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
     
@@ -28,6 +29,12 @@ class PortfolioViewController: UIViewController {
     let workExperienceViewController:WorkExperienceViewController = {
         let viewModel = WorkExperienceViewModel()
         let viewController = WorkExperienceViewController(viewModel: viewModel)
+        return viewController
+    }()
+    
+    let projectsViewController:ProjectsViewController = {
+        let viewModel = ProjectsViewModel()
+        let viewController = ProjectsViewController(viewModel: viewModel)
         return viewController
     }()
     
@@ -44,11 +51,9 @@ class PortfolioViewController: UIViewController {
     }
     
     func setupStackView() {
-        
-        addChildViewController(workExperienceViewController)
         stackView.addArrangedSubview(workExperienceViewController.view)
-        workExperienceViewController.didMove(toParentViewController: self)
-        
+        stackView.addArrangedSubview(projectsViewController.view)
+
         scrollView.addSubview(stackView)
         view.addSubview(scrollView)
         self.view.layoutIfNeeded()
@@ -67,7 +72,7 @@ class PortfolioViewController: UIViewController {
         stackView.snp.remakeConstraints{ (make) -> Void in
             make.edges.equalToSuperview()
             make.width.equalTo(UIScreen.main.bounds.width)
-            make.height.equalTo(UIScreen.main.bounds.height)
+            make.height.equalTo(1600)
         
         }
     }

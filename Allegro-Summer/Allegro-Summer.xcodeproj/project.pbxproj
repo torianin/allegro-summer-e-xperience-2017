@@ -14,6 +14,10 @@
 		E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEE61EC5702E000639CA /* EducationViewModel.swift */; };
 		E22BFEEB1EC570FA000639CA /* EducationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BFEEA1EC570FA000639CA /* EducationCell.swift */; };
 		E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23610401EC5081900EF69C0 /* UIColor.swift */; };
+		E26054181ECA8EFF0019C30A /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26054171ECA8EFF0019C30A /* ProjectsViewModel.swift */; };
+		E260541A1ECA8FB00019C30A /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26054191ECA8FB00019C30A /* Project.swift */; };
+		E260541C1ECA92270019C30A /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260541B1ECA92270019C30A /* ProjectCell.swift */; };
+		E260541E1ECA95E20019C30A /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260541D1ECA95E20019C30A /* ProjectsViewController.swift */; };
 		E27BCAA91EC903ED0091DC07 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAA81EC903ED0091DC07 /* University.swift */; };
 		E27BCAAB1EC914990091DC07 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAAA1EC914990091DC07 /* Language.swift */; };
 		E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */; };
@@ -40,15 +44,17 @@
 		DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allegro_Summer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01746E05EEB30C16C91326F /* Pods-Allegro-Summer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.release.xcconfig"; sourceTree = "<group>"; };
 		E22268F21EBF9D56004D6535 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		E22268FF1EBFA268004D6535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E22269001EBFA26D004D6535 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E22269021EBFA275004D6535 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E22269041EBFA277004D6535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E22BFEE11EC55AD1000639CA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E22BFEE31EC56FAE000639CA /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationViewController.swift; path = "Allegro-Summer/ViewControllers/Education/EducationViewController.swift"; sourceTree = SOURCE_ROOT; };
 		E22BFEE61EC5702E000639CA /* EducationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationViewModel.swift; path = "Allegro-Summer/ViewControllers/Education/ViewModel/EducationViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		E22BFEEA1EC570FA000639CA /* EducationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationCell.swift; path = "Allegro-Summer/ViewControllers/Education/View/EducationCell.swift"; sourceTree = SOURCE_ROOT; };
 		E23610401EC5081900EF69C0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E26054171ECA8EFF0019C30A /* ProjectsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewModel.swift; path = ViewModel/ProjectsViewModel.swift; sourceTree = "<group>"; };
+		E26054191ECA8FB00019C30A /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		E260541B1ECA92270019C30A /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectCell.swift; path = Views/ProjectCell.swift; sourceTree = "<group>"; };
+		E260541D1ECA95E20019C30A /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Views/ProjectsViewController.swift; sourceTree = "<group>"; };
 		E27BCAA81EC903ED0091DC07 /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		E27BCAAA1EC914990091DC07 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 				E27BCAA81EC903ED0091DC07 /* University.swift */,
 				E27BCAAA1EC914990091DC07 /* Language.swift */,
 				E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */,
+				E26054191ECA8FB00019C30A /* Project.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +276,8 @@
 				E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */,
 				E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */,
 				E2FE3B6E1EC956F800EC7A98 /* PortfolioHeaderCell.swift */,
+				E260541B1ECA92270019C30A /* ProjectCell.swift */,
+				E260541D1ECA95E20019C30A /* ProjectsViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -277,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FE3B6C1EC9435100EC7A98 /* WorkExperienceViewModel.swift */,
+				E26054171ECA8EFF0019C30A /* ProjectsViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -327,7 +337,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
-				en,
 			);
 			mainGroup = E2D6298E1EBD4E27009BBAA9;
 			productRefGroup = E2D629981EBD4E27009BBAA9 /* Products */;
@@ -408,6 +417,7 @@
 				E2A081371EBF935B00D8E37B /* MenuTabBarController.swift in Sources */,
 				E2FE3B611EC938B400EC7A98 /* PortfolioViewController.swift in Sources */,
 				E2FE3B6D1EC9435100EC7A98 /* WorkExperienceViewModel.swift in Sources */,
+				E26054181ECA8EFF0019C30A /* ProjectsViewModel.swift in Sources */,
 				E2FE3B6F1EC956F800EC7A98 /* PortfolioHeaderCell.swift in Sources */,
 				E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */,
 				E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */,
@@ -417,6 +427,7 @@
 				E2D6299B1EBD4E27009BBAA9 /* AppDelegate.swift in Sources */,
 				E27BCAAB1EC914990091DC07 /* Language.swift in Sources */,
 				E2A081311EBF905A00D8E37B /* Contact.swift in Sources */,
+				E260541C1ECA92270019C30A /* ProjectCell.swift in Sources */,
 				E2A081341EBF911500D8E37B /* BaseUICollectionCell.swift in Sources */,
 				E22BFEE41EC56FAE000639CA /* EducationViewController.swift in Sources */,
 				E2FE3B681EC9408500EC7A98 /* WorkExperience.swift in Sources */,
@@ -427,6 +438,8 @@
 				E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */,
 				E2FE3B661EC9401900EC7A98 /* WorkExperienceCell.swift in Sources */,
 				E22BFEE21EC55AD1000639CA /* HomeViewController.swift in Sources */,
+				E260541E1ECA95E20019C30A /* ProjectsViewController.swift in Sources */,
+				E260541A1ECA8FB00019C30A /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +450,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E22269021EBFA275004D6535 /* pl */,
-				E22269041EBFA277004D6535 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -446,7 +458,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E2D629A41EBD4E27009BBAA9 /* Base */,
-				E22268FF1EBFA268004D6535 /* en */,
 				E22269001EBFA26D004D6535 /* pl */,
 			);
 			name = LaunchScreen.storyboard;

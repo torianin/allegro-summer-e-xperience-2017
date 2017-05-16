@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WorkExperience: NSObject {
+class WorkExperience {
     let companyName: String
     let period: String
     let usedTechnologies: String

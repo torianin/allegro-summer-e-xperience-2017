@@ -6,5 +6,6 @@ target 'Allegro-Summer' do
     pod 'RxSwift', '3.2'
     pod 'RxCocoa', '3.2.0'
     pod 'SnapKit', '~> 3.2.0'
-    
+    pod 'SKPhotoBrowser'
+
 end

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Contact: NSObject {
+class Contact {
     let type: String
     let value: String
     let imageName: String

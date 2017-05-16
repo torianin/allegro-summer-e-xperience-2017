@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Language: NSObject {
+class Language {
     let imageName: String
     let name: String
     let level: String

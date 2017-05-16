@@ -8,7 +8,7 @@
 
 import Foundation
 
-class University: NSObject {
+class University {
     let imageName: String
     let name: String
     let period: String
