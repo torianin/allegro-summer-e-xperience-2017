@@ -11,10 +11,13 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import SKPhotoBrowser
 
 class ProjectsViewController: UIViewController, UITableViewDelegate {
     var viewModel: ProjectsViewModel!
     let disposeBag = DisposeBag()
+    
+    let tableViewHeight = 750
     
     let projectsExperienceTableView: UITableView =  {
         let tableView = UITableView()
@@ -47,6 +50,23 @@ class ProjectsViewController: UIViewController, UITableViewDelegate {
                 return cell
             }.addDisposableTo(disposeBag)
         
+        projectsExperienceTableView.rx.modelSelected(Project.self)
+            .subscribe(onNext: { project in
+                if !project.imageNames.isEmpty {
+                    var images = [SKPhoto]()
+                    for imageName in project.imageNames {
+                        let image = UIImage(named: imageName)?.imageWithInsets(insets: UIEdgeInsets(top: 100, left: 5, bottom: 100, right: 5))
+                        let photo = SKPhoto.photoWithImage(image!)
+                        images.append(photo)
+                    }
+                    
+                    let browser = SKPhotoBrowser(photos: images)
+                    browser.initializePageIndex(0)
+                    self.navigationController?.present(browser, animated: true, completion: {})
+                }
+            })
+            .addDisposableTo(disposeBag)
+        
         projectsExperienceTableView.separatorStyle = .none
         
         projectsExperienceTableView.rx.setDelegate(self).addDisposableTo(disposeBag)
@@ -67,8 +87,9 @@ class ProjectsViewController: UIViewController, UITableViewDelegate {
     
     func setupConstraints() {
         projectsExperienceTableView.snp.remakeConstraints { (make) -> Void in
+            make.edges.equalToSuperview()
             make.width.equalTo(UIScreen.main.bounds.width)
-            make.height.equalTo(800)
+            make.height.equalTo(tableViewHeight)
         }
     }
     
@@ -82,6 +103,6 @@ class ProjectsViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 130
     }
 }

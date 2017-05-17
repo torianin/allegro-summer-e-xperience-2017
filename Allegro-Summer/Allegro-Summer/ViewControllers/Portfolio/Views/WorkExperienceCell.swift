@@ -17,7 +17,11 @@ class WorkExperienceCell: BaseUITableViewCell {
     var workExperience: WorkExperience? {
         didSet {
             if let companyName = workExperience?.companyName {
-                companyNameLabel.text = companyName
+                if !workExperience!.imageNames.isEmpty {
+                    self.companyNameLabel.text = "\(companyName) 📱"
+                } else {
+                    companyNameLabel.text = companyName
+                }
             }
             
             if let period = workExperience?.period {
@@ -125,7 +129,7 @@ class WorkExperienceCell: BaseUITableViewCell {
         workDetailsLabel.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(self).offset(30)
             make.top.equalTo(usedTechnologiesLabel.snp.bottom).offset(10)
-            make.width.equalTo(self).offset(-50)
+            make.width.equalTo(UIScreen.main.bounds.width - 60)
         }
     }
 }

@@ -8,15 +8,24 @@ PODS:
 DEPENDENCIES:
   - RxCocoa (= 3.2.0)
   - RxSwift (= 3.2)
-  - SKPhotoBrowser
+  - SKPhotoBrowser (from `https://github.com/suzuki-0000/SKPhotoBrowser`)
   - SnapKit (~> 3.2.0)
+
+EXTERNAL SOURCES:
+  SKPhotoBrowser:
+    :git: https://github.com/suzuki-0000/SKPhotoBrowser
+
+CHECKOUT OPTIONS:
+  SKPhotoBrowser:
+    :commit: 1cd197de57da384a04ee275a142e02ff36554bdf
+    :git: https://github.com/suzuki-0000/SKPhotoBrowser
 
 SPEC CHECKSUMS:
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
-  SKPhotoBrowser: 3a7c6fc02aa1620ab17253a47a49fafda46536e8
+  SKPhotoBrowser: d91bd707222bd2308d098b82706e41e41f9829c3
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: 4785c9df731f792945a5c38d08baf18065d72f95
+PODFILE CHECKSUM: c4346f0a80014d2de5aaecefe5a5b05ce5f2c50f
 
 COCOAPODS: 1.2.0

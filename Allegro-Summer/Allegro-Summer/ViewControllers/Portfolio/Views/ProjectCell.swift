@@ -17,7 +17,11 @@ class ProjectCell: BaseUITableViewCell {
     var project: Project? {
         didSet {
             if let projectName = project?.name {
-                nameLabel.text = projectName
+                if !project!.imageNames.isEmpty {
+                    nameLabel.text = "\(projectName) 📱"
+                } else {
+                    nameLabel.text = projectName
+                }
             }
             
             if let projectDetails = project?.details {
@@ -63,8 +67,8 @@ class ProjectCell: BaseUITableViewCell {
         
         detailsLabel.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(self).offset(30)
-            make.right.equalTo(self).offset(-30)
             make.top.equalTo(nameLabel.snp.bottom).offset(10)
+            make.width.equalTo(UIScreen.main.bounds.width - 60)
         }
     }
 }

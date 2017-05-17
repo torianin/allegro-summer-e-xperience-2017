@@ -13,7 +13,7 @@ class Project {
     let imageNames: [String]
     let details: String
     
-    init(name: String, imageNames: [String], details: String ) {
+    init(name: String, imageNames: [String] = [], details: String ) {
         self.name = name
         self.imageNames = imageNames
         self.details = details

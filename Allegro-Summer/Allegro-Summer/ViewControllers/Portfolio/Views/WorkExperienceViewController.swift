@@ -11,10 +11,13 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import SKPhotoBrowser
 
 class WorkExperienceViewController: UIViewController, UITableViewDelegate {
     var viewModel: WorkExperienceViewModel!
     let disposeBag = DisposeBag()
+    
+    let tableViewHeight = 800
     
     let workExperienceTableView: UITableView = {
         let tableView = UITableView()
@@ -49,6 +52,23 @@ class WorkExperienceViewController: UIViewController, UITableViewDelegate {
                 return cell
             }.addDisposableTo(disposeBag)
         
+        workExperienceTableView.rx.modelSelected(WorkExperience.self)
+            .subscribe(onNext: { workExperience in
+                if !workExperience.imageNames.isEmpty {
+                    var images = [SKPhoto]()
+                    for imageName in workExperience.imageNames {
+                        let image = UIImage(named: imageName)?.imageWithInsets(insets: UIEdgeInsets(top: 100, left: 5, bottom: 100, right: 5))
+                        let photo = SKPhoto.photoWithImage(image!)
+                        images.append(photo)
+                    }
+                    
+                    let browser = SKPhotoBrowser(photos: images)
+                    browser.initializePageIndex(0)
+                    self.navigationController?.present(browser, animated: true, completion: {})
+                }
+            })
+            .addDisposableTo(disposeBag)
+        
         workExperienceTableView.separatorStyle = .none
         
         workExperienceTableView.rx.setDelegate(self).addDisposableTo(disposeBag)
@@ -69,8 +89,9 @@ class WorkExperienceViewController: UIViewController, UITableViewDelegate {
     
     func setupConstraints() {
         workExperienceTableView.snp.remakeConstraints { (make) -> Void in
+            make.edges.equalToSuperview()
             make.width.equalTo(UIScreen.main.bounds.width)
-            make.height.equalTo(800)
+            make.height.equalTo(tableViewHeight)
         }
     }
     

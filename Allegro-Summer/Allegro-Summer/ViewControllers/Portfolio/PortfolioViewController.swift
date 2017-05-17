@@ -11,16 +11,6 @@ import UIKit
 
 class PortfolioViewController: UIViewController {
     
-    let stackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.alignment = .center
-        stackView.spacing = 10
-        stackView.distribution = .equalSpacing
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
-    
     let scrollView: UIScrollView = {
         let view = UIScrollView()
         return view
@@ -42,7 +32,8 @@ class PortfolioViewController: UIViewController {
         super.viewDidLoad()
 
         setupNavigationBarTitle()
-        setupStackView()
+        setupHelpBarButton()
+        setupScrollView()
         setupConstraints()
     }
     
@@ -50,13 +41,41 @@ class PortfolioViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = NSLocalizedString("menu_title_experience", comment: "")
     }
     
-    func setupStackView() {
-        stackView.addArrangedSubview(workExperienceViewController.view)
-        stackView.addArrangedSubview(projectsViewController.view)
+    func setupHelpBarButton() {
+        let menuImage = UIImage(named: "ic_help_outline_white")?.withRenderingMode(.alwaysOriginal)
+        let menuBarButtonItem = UIBarButtonItem(image: menuImage, style: .plain, target: self, action: #selector(handleHelpTap))
+        navigationItem.rightBarButtonItems = [menuBarButtonItem]
+    }
+    
+    func handleHelpTap() {
+        let alert = UIAlertController(title: NSLocalizedString("menu_help", comment: ""), message:NSLocalizedString("msg_login_info", comment: "") , preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func setupScrollView() {
+        let width = UIScreen.main.bounds.width
+        
+        let height = CGFloat( workExperienceViewController.tableViewHeight +
+            projectsViewController.tableViewHeight )
+        
+        scrollView.contentSize = CGSize.init(width: UIScreen.main.bounds.width, height: height)
+        
+        var y:CGFloat = 0
+        
+        let viewControllers = [workExperienceViewController, projectsViewController]
 
-        scrollView.addSubview(stackView)
+        for viewController in viewControllers {
+            addChildViewController(viewController)
+            let originY:CGFloat = y
+            viewController.view.frame = CGRect.init(x: 0, y: originY, width: width, height: viewController.view.frame.height)
+            scrollView.addSubview(viewController.view)
+            viewController.didMove(toParentViewController: self)
+            y += viewController.view.frame.height
+        }
+        
         view.addSubview(scrollView)
-        self.view.layoutIfNeeded()
+
     }
     
     override func viewWillLayoutSubviews() {
@@ -67,13 +86,6 @@ class PortfolioViewController: UIViewController {
         
         scrollView.snp.remakeConstraints { (make) -> Void in
             make.edges.equalToSuperview()
-        }
-        
-        stackView.snp.remakeConstraints{ (make) -> Void in
-            make.edges.equalToSuperview()
-            make.width.equalTo(UIScreen.main.bounds.width)
-            make.height.equalTo(1600)
-        
         }
     }
     

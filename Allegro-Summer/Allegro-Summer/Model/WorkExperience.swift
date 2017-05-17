@@ -14,12 +14,14 @@ class WorkExperience {
     let usedTechnologies: String
     let workDetails: String
     let workPlace: String
-    
-    init(companyName: String, period: String, usedTechnologies: String, workDetails: String, workPlace: String ) {
+    let imageNames: [String]
+
+    init(companyName: String, period: String, usedTechnologies: String, workDetails: String, workPlace: String, imageNames: [String] = [] ) {
         self.companyName = companyName
         self.period = period
         self.usedTechnologies = usedTechnologies
         self.workDetails = workDetails
         self.workPlace = workPlace
+        self.imageNames = imageNames
     }
 }

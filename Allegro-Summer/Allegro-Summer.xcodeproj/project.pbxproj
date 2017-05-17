@@ -20,6 +20,7 @@
 		E260541E1ECA95E20019C30A /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260541D1ECA95E20019C30A /* ProjectsViewController.swift */; };
 		E27BCAA91EC903ED0091DC07 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAA81EC903ED0091DC07 /* University.swift */; };
 		E27BCAAB1EC914990091DC07 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAAA1EC914990091DC07 /* Language.swift */; };
+		E295DBFC1ECCB28400685C92 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295DBFB1ECCB28400685C92 /* UIImage.swift */; };
 		E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */; };
 		E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */; };
 		E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */; };
@@ -51,12 +52,14 @@
 		E22BFEE61EC5702E000639CA /* EducationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationViewModel.swift; path = "Allegro-Summer/ViewControllers/Education/ViewModel/EducationViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		E22BFEEA1EC570FA000639CA /* EducationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EducationCell.swift; path = "Allegro-Summer/ViewControllers/Education/View/EducationCell.swift"; sourceTree = SOURCE_ROOT; };
 		E23610401EC5081900EF69C0 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E255A0181ECAC803006B2828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E26054171ECA8EFF0019C30A /* ProjectsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewModel.swift; path = ViewModel/ProjectsViewModel.swift; sourceTree = "<group>"; };
 		E26054191ECA8FB00019C30A /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		E260541B1ECA92270019C30A /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectCell.swift; path = Views/ProjectCell.swift; sourceTree = "<group>"; };
 		E260541D1ECA95E20019C30A /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Views/ProjectsViewController.swift; sourceTree = "<group>"; };
 		E27BCAA81EC903ED0091DC07 /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		E27BCAAA1EC914990091DC07 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		E295DBFB1ECCB28400685C92 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCell.swift; path = Views/ContactCell.swift; sourceTree = "<group>"; };
 		E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactViewModel.swift; path = ViewModel/ContactViewModel.swift; sourceTree = "<group>"; };
@@ -68,7 +71,7 @@
 		E2D629A11EBD4E27009BBAA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D629A41EBD4E27009BBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D629A61EBD4E27009BBAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PortfolioViewController.swift; path = Portfolio/PortfolioViewController.swift; sourceTree = "<group>"; };
 		E2FE3B621EC93EB500EC7A98 /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceViewController.swift; path = Views/WorkExperienceViewController.swift; sourceTree = "<group>"; };
 		E2FE3B651EC9401900EC7A98 /* WorkExperienceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkExperienceCell.swift; path = Views/WorkExperienceCell.swift; sourceTree = "<group>"; };
 		E2FE3B671EC9408500EC7A98 /* WorkExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				E23610401EC5081900EF69C0 /* UIColor.swift */,
+				E295DBFB1ECCB28400685C92 /* UIImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -185,7 +189,6 @@
 			children = (
 				E2FE3B6B1EC9433900EC7A98 /* ViewModel */,
 				E2FE3B641EC93EBD00EC7A98 /* Views */,
-				E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				E2A081241EBF8D2700D8E37B /* Education */,
 				E2A081251EBF8D2700D8E37B /* Home */,
 				E2A081271EBF8D2700D8E37B /* Portfolio */,
+				E2FE3B601EC938B400EC7A98 /* PortfolioViewController.swift */,
 				E2A081221EBF8C9600D8E37B /* Menu */,
 			);
 			path = ViewControllers;
@@ -420,6 +424,7 @@
 				E26054181ECA8EFF0019C30A /* ProjectsViewModel.swift in Sources */,
 				E2FE3B6F1EC956F800EC7A98 /* PortfolioHeaderCell.swift in Sources */,
 				E22BFEE71EC5702E000639CA /* EducationViewModel.swift in Sources */,
+				E295DBFC1ECCB28400685C92 /* UIImage.swift in Sources */,
 				E23610411EC5081A00EF69C0 /* UIColor.swift in Sources */,
 				E22BFEEB1EC570FA000639CA /* EducationCell.swift in Sources */,
 				E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */,
@@ -450,6 +455,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E22269021EBFA275004D6535 /* pl */,
+				E255A0181ECAC803006B2828 /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
