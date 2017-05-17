@@ -1,6 +1,6 @@
 # ALLEGRO SUMMER E-XPERIENCE
 
-Aplikacja przedstawiająca moją osobę wykonaną w ramach programu Allegro Summer e-Xperience 2017.
+Aplikacja wykonana w ramach programu Allegro Summer e-Xperience 2017 przedstawiająca moją osobę.
 
 ![Screenshots](Art/landscape.png)
 ![Screenshots](Art/portrait.png)
