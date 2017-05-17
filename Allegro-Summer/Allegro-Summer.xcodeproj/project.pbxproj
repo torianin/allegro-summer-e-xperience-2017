@@ -21,6 +21,9 @@
 		E27BCAA91EC903ED0091DC07 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAA81EC903ED0091DC07 /* University.swift */; };
 		E27BCAAB1EC914990091DC07 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BCAAA1EC914990091DC07 /* Language.swift */; };
 		E295DBFC1ECCB28400685C92 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295DBFB1ECCB28400685C92 /* UIImage.swift */; };
+		E295DC041ECCE49B00685C92 /* Allegro_SummerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295DC031ECCE49B00685C92 /* Allegro_SummerTests.swift */; };
+		E295DC0B1ECCE56000685C92 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A081301EBF905A00D8E37B /* Contact.swift */; };
+		E295DC0D1ECCE73900685C92 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26054191ECA8FB00019C30A /* Project.swift */; };
 		E2A0812B1EBF8DEB00D8E37B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */; };
 		E2A0812D1EBF8E2F00D8E37B /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */; };
 		E2A0812F1EBF8F7300D8E37B /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */; };
@@ -39,6 +42,16 @@
 		E2FE3B6F1EC956F800EC7A98 /* PortfolioHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE3B6E1EC956F800EC7A98 /* PortfolioHeaderCell.swift */; };
 		E942D739368D8264CA38BF4B /* Pods_Allegro_Summer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5E16AC671B3AE1E617F694 /* Pods_Allegro_Summer.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E295DC061ECCE49B00685C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D6298F1EBD4E27009BBAA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2D629961EBD4E27009BBAA9;
+			remoteInfo = "Allegro-Summer";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1531959A2DA273D3E2B3A4FF /* Pods-Allegro-Summer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allegro-Summer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allegro-Summer/Pods-Allegro-Summer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +73,9 @@
 		E27BCAA81EC903ED0091DC07 /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		E27BCAAA1EC914990091DC07 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E295DBFB1ECCB28400685C92 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E295DC011ECCE49A00685C92 /* Allegro-SummerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Allegro-SummerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E295DC031ECCE49B00685C92 /* Allegro_SummerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allegro_SummerTests.swift; sourceTree = "<group>"; };
+		E295DC051ECCE49B00685C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2A0812A1EBF8DEB00D8E37B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E2A0812C1EBF8E2F00D8E37B /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactCell.swift; path = Views/ContactCell.swift; sourceTree = "<group>"; };
 		E2A0812E1EBF8F7300D8E37B /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactViewModel.swift; path = ViewModel/ContactViewModel.swift; sourceTree = "<group>"; };
@@ -81,6 +97,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E295DBFE1ECCE49A00685C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D629941EBD4E27009BBAA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +155,15 @@
 				E295DBFB1ECCB28400685C92 /* UIImage.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E295DC021ECCE49B00685C92 /* Allegro-SummerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E295DC031ECCE49B00685C92 /* Allegro_SummerTests.swift */,
+				E295DC051ECCE49B00685C92 /* Info.plist */,
+			);
+			path = "Allegro-SummerTests";
 			sourceTree = "<group>";
 		};
 		E2A081201EBF8B8600D8E37B /* Model */ = {
@@ -223,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D629991EBD4E27009BBAA9 /* Allegro-Summer */,
+				E295DC021ECCE49B00685C92 /* Allegro-SummerTests */,
 				E2D629981EBD4E27009BBAA9 /* Products */,
 				7A36440CF5C8A65E5CB836A6 /* Pods */,
 				D2900F040B7B7A071048397D /* Frameworks */,
@@ -233,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D629971EBD4E27009BBAA9 /* Allegro-Summer.app */,
+				E295DC011ECCE49A00685C92 /* Allegro-SummerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,6 +332,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E295DC001ECCE49A00685C92 /* Allegro-SummerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E295DC081ECCE49B00685C92 /* Build configuration list for PBXNativeTarget "Allegro-SummerTests" */;
+			buildPhases = (
+				E295DBFD1ECCE49A00685C92 /* Sources */,
+				E295DBFE1ECCE49A00685C92 /* Frameworks */,
+				E295DBFF1ECCE49A00685C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E295DC071ECCE49B00685C92 /* PBXTargetDependency */,
+			);
+			name = "Allegro-SummerTests";
+			productName = "Allegro-SummerTests";
+			productReference = E295DC011ECCE49A00685C92 /* Allegro-SummerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E2D629961EBD4E27009BBAA9 /* Allegro-Summer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2D629A91EBD4E27009BBAA9 /* Build configuration list for PBXNativeTarget "Allegro-Summer" */;
@@ -328,6 +380,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Torianin;
 				TargetAttributes = {
+					E295DC001ECCE49A00685C92 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PS6RWDDX97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2D629961EBD4E27009BBAA9;
+					};
 					E2D629961EBD4E27009BBAA9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PS6RWDDX97;
@@ -348,11 +406,19 @@
 			projectRoot = "";
 			targets = (
 				E2D629961EBD4E27009BBAA9 /* Allegro-Summer */,
+				E295DC001ECCE49A00685C92 /* Allegro-SummerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E295DBFF1ECCE49A00685C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D629951EBD4E27009BBAA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +480,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E295DBFD1ECCE49A00685C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E295DC0B1ECCE56000685C92 /* Contact.swift in Sources */,
+				E295DC041ECCE49B00685C92 /* Allegro_SummerTests.swift in Sources */,
+				E295DC0D1ECCE73900685C92 /* Project.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2D629931EBD4E27009BBAA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +526,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E295DC071ECCE49B00685C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2D629961EBD4E27009BBAA9 /* Allegro-Summer */;
+			targetProxy = E295DC061ECCE49B00685C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E22269031EBFA275004D6535 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -472,6 +556,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E295DC091ECCE49B00685C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PS6RWDDX97;
+				INFOPLIST_FILE = "Allegro-SummerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Torianin.Allegro-SummerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Allegro-Summer.app/Allegro-Summer";
+			};
+			name = Debug;
+		};
+		E295DC0A1ECCE49B00685C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PS6RWDDX97;
+				INFOPLIST_FILE = "Allegro-SummerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Torianin.Allegro-SummerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Allegro-Summer.app/Allegro-Summer";
+			};
+			name = Release;
+		};
 		E2D629A71EBD4E27009BBAA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -598,6 +710,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E295DC081ECCE49B00685C92 /* Build configuration list for PBXNativeTarget "Allegro-SummerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E295DC091ECCE49B00685C92 /* Debug */,
+				E295DC0A1ECCE49B00685C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E2D629921EBD4E27009BBAA9 /* Build configuration list for PBXProject "Allegro-Summer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
